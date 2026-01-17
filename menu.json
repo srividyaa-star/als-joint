@@ -1,128 +1,135 @@
 {
-    "smash_burgers": {
-        "title": "Smash Burgers / Burgers Smash",
-        "description": "All our signature burgers are crafted from premium 100% angus beef.",
-        "items": [
-            {
-                "name": "Classic Smash / Le Classic",
-                "price": "$10.00",
-                "description": "Cheddar cheese, caramelized onions, lettuce, pickles, tomato and al's special sauce."
-            },
-            {
-                "name": "Bacon Jam / Confiture De Bacon",
-                "price": "$12.00",
-                "description": "Cheddar, caramelized onions, lettuce, tomato, bacon, whiskey bacon jam and al's sauce."
-            },
-            {
-                "name": "Dank Bank",
-                "price": "$10.00",
-                "description": "Shredded cheese, al's onions and special sauce."
-            },
-            {
-                "name": "Idiot / L'idiot",
-                "price": "$12.00",
-                "description": "Swiss cheese, sautéed mushrooms, lettuce, tomato, caramelized onions, al's special sauce and whiskey bacon jam."
-            },
-            {
-                "name": "Angry / En Colère",
-                "price": "$10.00",
-                "description": "Cheddar, lettuce, tomato, caramelized onions, jalapeño peppers and al's angry spicy sauce."
-            },
-            {
-                "name": "Dank Bank Deluxe",
-                "price": "$13.00",
-                "description": "Cheddar cheese, bacon, al's onions, carolina gold sauce, lettuce and tomato."
-            }
-        ]
-    },
-    "fries_poutine": {
-        "title": "Fries & Poutine / Frites Et Poutine",
-        "items": [
-            {
-                "name": "Poutine Classic / Classique",
-                "price": "$10.00",
-                "description": "Fries topped with brown sauce and cheese curds."
-            },
-            {
-                "name": "Chili Poutine",
-                "price": "$13.00",
-                "description": "Fries topped with chili and cheese curds."
-            },
-            {
-                "name": "Potato Wedges",
-                "price": "$7.00",
-                "description": ""
-            },
-            {
-                "name": "Chili Fries",
-                "price": "$10.00",
-                "description": "Fries topped with al's homemade chili and shredded cheese."
-            }
-        ]
-    },
-    "sandwiches": {
-        "title": "Sandwiches / Sandwichs",
-        "items": [
-            {
-                "name": "Classic Chicken Sandwich",
-                "price": "$14.00",
-                "description": "Fried chicken, cheddar cheese, lettuce, tomato and al sauce."
-            },
-            {
-                "name": "The Big Veal Sandwich",
-                "price": "$15.00",
-                "description": "Crispy breaded veal cutlet, provolone, lettuce, tomato and al's sauce."
-            },
-            {
-                "name": "Veggie / Végétarien",
-                "price": "$11.00",
-                "description": "Cheese, caramelized onions, lettuce, pickles, tomato and al's special sauce."
-            }
-        ]
-    },
-    "hot_dogs": {
-        "title": "Al's Big Hot Dogs / Gros Hot Dogs",
-        "items": [
-            {
-                "name": "Bacon Jam Dog",
-                "price": "$12.00",
-                "description": "All beef 8\" hotdog w/ cheese and our house bacon jam & onions."
-            },
-            {
-                "name": "Chili Dog",
-                "price": "$12.00",
-                "description": "Homemade chili, shredded cheese and diced onions."
-            },
-            {
-                "name": "Big Poutine Dog",
-                "price": "$12.00",
-                "description": "Cheese curds and brown poutine sauce."
-            }
-        ]
-    },
-    "appetizers": {
-        "title": "Appetizers / Amuse Geules",
-        "items": [
-            {
-                "name": "Al's Wings",
-                "price": "$12.00",
-                "description": "Buffalo, BBQ or spicy honey garlic. Blue cheese or ranch available."
-            },
-            {
-                "name": "Fried Pickle Wedges",
-                "price": "$10.00",
-                "description": "6 pieces of crispy goodness."
-            },
-            {
-                "name": "Mozzarella Sticks",
-                "price": "$9.00",
-                "description": ""
-            },
-            {
-                "name": "Loaded Nachos",
-                "price": "$9.00",
-                "description": "Chili, shredded cheese and crema."
-            }
-        ]
-    }
+    "sections": [
+        {
+            "id": "smash_burgers",
+            "title": "Smash Burgers / Burgers Smash",
+            "description": "All our signature burgers are crafted from premium 100% angus beef.",
+            "items": [
+                {
+                    "name": "Classic Smash / Le Classic",
+                    "price": "$10.00",
+                    "description": "Cheddar cheese, caramelized onions, lettuce, pickles, tomato and al's special sauce."
+                },
+                {
+                    "name": "Bacon Jam / Confiture De Bacon",
+                    "price": "$12.00",
+                    "description": "Cheddar, caramelized onions, lettuce, tomato, bacon, whiskey bacon jam and al's sauce."
+                },
+                {
+                    "name": "Dank Bank",
+                    "price": "$10.00",
+                    "description": "Shredded cheese, al's onions and special sauce."
+                },
+                {
+                    "name": "Idiot / L'idiot",
+                    "price": "$12.00",
+                    "description": "Swiss cheese, sautéed mushrooms, lettuce, tomato, caramelized onions, al's special sauce and whiskey bacon jam."
+                },
+                {
+                    "name": "Angry / En Colère",
+                    "price": "$10.00",
+                    "description": "Cheddar, lettuce, tomato, caramelized onions, jalapeño peppers and al's angry spicy sauce."
+                },
+                {
+                    "name": "Dank Bank Deluxe",
+                    "price": "$13.00",
+                    "description": "Cheddar cheese, bacon, al's onions, carolina gold sauce, lettuce and tomato."
+                }
+            ]
+        },
+        {
+            "id": "fries_poutine",
+            "title": "Fries & Poutine / Frites Et Poutine",
+            "items": [
+                {
+                    "name": "Poutine Classic / Classique",
+                    "price": "$10.00",
+                    "description": "Fries topped with brown sauce and cheese curds."
+                },
+                {
+                    "name": "Chili Poutine",
+                    "price": "$13.00",
+                    "description": "Fries topped with chili and cheese curds."
+                },
+                {
+                    "name": "Potato Wedges",
+                    "price": "$7.00",
+                    "description": ""
+                },
+                {
+                    "name": "Chili Fries",
+                    "price": "$10.00",
+                    "description": "Fries topped with al's homemade chili and shredded cheese."
+                }
+            ]
+        },
+        {
+            "id": "sandwiches",
+            "title": "Sandwiches / Sandwichs",
+            "items": [
+                {
+                    "name": "Classic Chicken Sandwich",
+                    "price": "$14.00",
+                    "description": "Fried chicken, cheddar cheese, lettuce, tomato and al sauce."
+                },
+                {
+                    "name": "The Big Veal Sandwich",
+                    "price": "$15.00",
+                    "description": "Crispy breaded veal cutlet, provolone, lettuce, tomato and al's sauce."
+                },
+                {
+                    "name": "Veggie / Végétarien",
+                    "price": "$11.00",
+                    "description": "Cheese, caramelized onions, lettuce, pickles, tomato and al's special sauce."
+                }
+            ]
+        },
+        {
+            "id": "hot_dogs",
+            "title": "Al's Big Hot Dogs / Gros Hot Dogs",
+            "items": [
+                {
+                    "name": "Bacon Jam Dog",
+                    "price": "$12.00",
+                    "description": "All beef 8\" hotdog w/ cheese and our house bacon jam & onions."
+                },
+                {
+                    "name": "Chili Dog",
+                    "price": "$12.00",
+                    "description": "Homemade chili, shredded cheese and diced onions."
+                },
+                {
+                    "name": "Big Poutine Dog",
+                    "price": "$12.00",
+                    "description": "Cheese curds and brown poutine sauce."
+                }
+            ]
+        },
+        {
+            "id": "appetizers",
+            "title": "Appetizers / Amuse Geules",
+            "items": [
+                {
+                    "name": "Al's Wings",
+                    "price": "$12.00",
+                    "description": "Buffalo, BBQ or spicy honey garlic. Blue cheese or ranch available."
+                },
+                {
+                    "name": "Fried Pickle Wedges",
+                    "price": "$10.00",
+                    "description": "6 pieces of crispy goodness."
+                },
+                {
+                    "name": "Mozzarella Sticks",
+                    "price": "$9.00",
+                    "description": ""
+                },
+                {
+                    "name": "Loaded Nachos",
+                    "price": "$9.00",
+                    "description": "Chili, shredded cheese and crema."
+                }
+            ]
+        }
+    ]
 }

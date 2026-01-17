@@ -65,9 +65,7 @@ async function loadMenu() {
 
         menuContainer.innerHTML = ''; // Clear loading message
 
-        for (const sectionKey in menuData) {
-            const section = menuData[sectionKey];
-
+        menuData.sections.forEach(section => {
             const sectionDiv = document.createElement('div');
             sectionDiv.className = 'menu-section';
 
@@ -93,7 +91,7 @@ async function loadMenu() {
             sectionHTML += `</div>`;
             sectionDiv.innerHTML = sectionHTML;
             menuContainer.appendChild(sectionDiv);
-        }
+        });
     } catch (error) {
         console.error('Error loading menu:', error);
         menuContainer.innerHTML = '<p style="text-align: center; color: red;">Sorry, we couldn\'t load the menu right now. Please try again later!</p>';
