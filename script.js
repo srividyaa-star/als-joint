@@ -14,15 +14,7 @@ const quotes = [
 burger.addEventListener('click', () => {
     const randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
     const speechBubble = document.createElement('div');
-    speechBubble.style.position = 'fixed';
-    speechBubble.style.bottom = '140px';
-    speechBubble.style.right = '40px';
-    speechBubble.style.background = 'white';
-    speechBubble.style.padding = '10px 20px';
-    speechBubble.style.border = '3px solid black';
-    speechBubble.style.borderRadius = '20px';
-    speechBubble.style.fontFamily = "'Kalam', cursive";
-    speechBubble.style.zIndex = '1002';
+    speechBubble.className = 'speech-bubble';
     speechBubble.innerHTML = randomQuote;
 
     document.body.appendChild(speechBubble);
