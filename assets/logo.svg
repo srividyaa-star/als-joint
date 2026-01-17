@@ -1,0 +1,38 @@
+<svg width="400" height="350" viewBox="0 0 400 350" xmlns="http://www.w3.org/2000/svg">
+  <!-- Hand-drawn style background flame -->
+  <path d="M200 280C140 280 110 220 110 160C110 100 140 40 200 10C260 40 290 100 290 160C290 220 260 280 200 280Z" fill="#9b2226" stroke="#001219" stroke-width="10" stroke-linejoin="round"/>
+  <path d="M200 260C155 260 135 210 135 160C135 110 155 60 200 40C245 60 265 110 265 160C265 210 245 260 200 260Z" fill="#ffd700" stroke="#001219" stroke-width="5" stroke-linejoin="round" opacity="0.9"/>
+
+  <!-- Crossed Utensils (Hand-drawn look) -->
+  <!-- Spatula -->
+  <g transform="rotate(-40 200 150)">
+    <rect x="175" y="30" width="50" height="70" rx="8" fill="#f1faee" stroke="#001219" stroke-width="8"/>
+    <line x1="190" y1="45" x2="190" y2="85" stroke="#001219" stroke-width="4" stroke-linecap="round"/>
+    <line x1="200" y1="45" x2="200" y2="85" stroke="#001219" stroke-width="4" stroke-linecap="round"/>
+    <line x1="210" y1="45" x2="210" y2="85" stroke="#001219" stroke-width="4" stroke-linecap="round"/>
+    <!-- Handle -->
+    <rect x="195" y="100" width="12" height="180" rx="6" fill="#4b2e1e" stroke="#001219" stroke-width="8"/>
+  </g>
+  <!-- Fork -->
+  <g transform="rotate(40 200 150)">
+    <path d="M175 30 L175 100 Q175 115 200 115 Q225 115 225 100 L225 30" fill="#f1faee" stroke="#001219" stroke-width="8" stroke-linejoin="round"/>
+    <line x1="175" y1="30" x2="175" y2="70" stroke="#001219" stroke-width="8" stroke-linecap="round"/>
+    <line x1="192" y1="30" x2="192" y2="80" stroke="#001219" stroke-width="8" stroke-linecap="round"/>
+    <line x1="208" y1="30" x2="208" y2="80" stroke="#001219" stroke-width="8" stroke-linecap="round"/>
+    <line x1="225" y1="30" x2="225" y2="70" stroke="#001219" stroke-width="8" stroke-linecap="round"/>
+    <!-- Handle -->
+    <rect x="195" y="115" width="12" height="165" rx="6" fill="#4b2e1e" stroke="#001219" stroke-width="8"/>
+  </g>
+
+  <!-- Text "AL'S JOINT" -->
+  <!-- Outline -->
+  <text x="200" y="170" font-family="Lilita One, sans-serif" font-size="75" text-anchor="middle" fill="white" stroke="#001219" stroke-width="15" paint-order="stroke" letter-spacing="4">AL'S JOINT</text>
+  <!-- Main Fill -->
+  <text x="200" y="170" font-family="Lilita One, sans-serif" font-size="75" text-anchor="middle" fill="white">AL'S JOINT</text>
+
+  <!-- Red Bar for Tagline -->
+  <rect x="60" y="210" width="280" height="50" rx="10" fill="#9b2226" stroke="#001219" stroke-width="8" transform="rotate(-1, 200, 235)"/>
+  
+  <!-- Tagline "FOOD TRUCK CO." -->
+  <text x="200" y="245" font-family="Lilita One, sans-serif" font-size="28" text-anchor="middle" fill="white" transform="rotate(-1, 200, 235)">FOOD TRUCK CO.</text>
+</svg>
