@@ -90,5 +90,33 @@ async function loadMenu() {
     }
 }
 
-// Call loadMenu on window load
-window.addEventListener('load', loadMenu);
+// Stoner Bob Logic
+function initStonerBob() {
+    const bobContainer = document.getElementById('stoner-bob-container');
+    const closeBob = document.getElementById('close-bob');
+
+    if (!bobContainer || !closeBob) return;
+
+    // Check if Bob has appeared in this session
+    const hasSeenBob = sessionStorage.getItem('hasSeenBob');
+
+    if (!hasSeenBob) {
+        // Show Bob after 2 seconds
+        setTimeout(() => {
+            bobContainer.classList.add('show');
+            sessionStorage.setItem('hasSeenBob', 'true');
+        }, 2000);
+    }
+
+    closeBob.addEventListener('click', () => {
+        bobContainer.classList.remove('show');
+        // Optional: Keep him hidden for longer if closed
+        localStorage.setItem('bobDismissed', Date.now());
+    });
+}
+
+// Call loadMenu and initStonerBob on window load
+window.addEventListener('load', () => {
+    loadMenu();
+    initStonerBob();
+});
