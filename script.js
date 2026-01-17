@@ -4,7 +4,7 @@ const chalkboard = document.querySelector('.chalkboard-content');
 const quotes = [
     "Oh my god, so good.",
     "BEEF! It's what's for dinner.",
-    "Don't tell Bob I'm here.",
+    "Don't tell Al I'm here.",
     "Smash it like you mean it.",
     "Best poutine in Oka!",
     "Juicy, cheesy, smashy.",
@@ -90,33 +90,33 @@ async function loadMenu() {
     }
 }
 
-// Stoner Bob Logic
-function initStonerBob() {
-    const bobContainer = document.getElementById('stoner-bob-container');
-    const closeBob = document.getElementById('close-bob');
+// Chef Al Logic
+function initChefAl() {
+    const alContainer = document.getElementById('chef-al-container');
+    const closeAl = document.getElementById('close-al');
 
-    if (!bobContainer || !closeBob) return;
+    if (!alContainer || !closeAl) return;
 
-    // Check if Bob has appeared in this session
-    const hasSeenBob = sessionStorage.getItem('hasSeenBob');
+    // Check if Al has appeared in this session
+    const hasSeenAl = sessionStorage.getItem('hasSeenAl');
 
-    if (!hasSeenBob) {
-        // Show Bob after 2 seconds
+    if (!hasSeenAl) {
+        // Show Al after 2 seconds
         setTimeout(() => {
-            bobContainer.classList.add('show');
-            sessionStorage.setItem('hasSeenBob', 'true');
+            alContainer.classList.add('show');
+            sessionStorage.setItem('hasSeenAl', 'true');
         }, 2000);
     }
 
-    closeBob.addEventListener('click', () => {
-        bobContainer.classList.remove('show');
+    closeAl.addEventListener('click', () => {
+        alContainer.classList.remove('show');
         // Optional: Keep him hidden for longer if closed
-        localStorage.setItem('bobDismissed', Date.now());
+        localStorage.setItem('alDismissed', Date.now());
     });
 }
 
 // Call loadMenu and initStonerBob on window load
 window.addEventListener('load', () => {
     loadMenu();
-    initStonerBob();
+    initChefAl();
 });

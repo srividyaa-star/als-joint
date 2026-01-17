@@ -487,8 +487,8 @@ footer {
     }
 }
 
-/* Stoner Bob Styles */
-.stoner-bob-container {
+/* Chef Al Styles */
+.chef-al-container {
     position: fixed;
     bottom: -400px;
     /* Hidden initially */
@@ -501,18 +501,18 @@ footer {
     pointer-events: none;
 }
 
-.stoner-bob-container.show {
+.chef-al-container.show {
     bottom: 0;
     pointer-events: auto;
 }
 
-.stoner-bob-img {
+.chef-al-img {
     width: 250px;
     height: auto;
     filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.2));
 }
 
-.bob-speech-bubble {
+.al-speech-bubble {
     position: relative;
     background: white;
     padding: 15px 25px;
@@ -529,11 +529,11 @@ footer {
     z-index: 2001;
 }
 
-.stoner-bob-container.show .bob-speech-bubble {
+.chef-al-container.show .al-speech-bubble {
     transform: scale(1);
 }
 
-.bob-speech-bubble::after {
+.al-speech-bubble::after {
     content: '';
     position: absolute;
     bottom: -18px;
@@ -545,7 +545,7 @@ footer {
     width: 0;
 }
 
-.bob-speech-bubble::before {
+.al-speech-bubble::before {
     content: '';
     position: absolute;
     bottom: -25px;
@@ -557,7 +557,7 @@ footer {
     width: 0;
 }
 
-.close-bob {
+.close-al {
     position: absolute;
     top: -10px;
     right: -10px;
@@ -576,16 +576,16 @@ footer {
     transition: transform 0.2s;
 }
 
-.close-bob:hover {
+.close-al:hover {
     transform: scale(1.1) rotate(90deg);
 }
 
 @media (max-width: 768px) {
-    .stoner-bob-img {
+    .chef-al-img {
         width: 180px;
     }
 
-    .bob-speech-bubble {
+    .al-speech-bubble {
         font-size: 1rem;
         max-width: 200px;
     }
